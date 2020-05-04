@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#droptarget {
+  float: left; 
+  width: 200px; 
+  height: 35px;
+  margin: 55px;
+  margin-top: 155px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+
+<img src="./Images/air-raid-148909__340.png" width="100px" height="60px" draggable="true" ondragstart="dragStart(event)" id="dragtarget"></img>
+
+<img id="droptarget" src="./Images/th.png" width="300px" height="300px" ondrop="drop(event)" ondragover="allowDrop(event)"></img>
+
+
+<img id="demo" src="./Images/explosion-147909__340.png" width="300px" height="300px"></img>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+  document.getElementById("demo").innerHTML = "The p element is OVER the droptarget.";
+  event.getElementById("demo")
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "The p element was dropped.";
+}
+
+</script>
+
+</body>
+</html>

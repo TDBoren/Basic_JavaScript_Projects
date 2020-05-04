@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+  <head>
+    <title>JavaScript Alert</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/Basic_CSS_Drag_Event.css">
+  </head>
+  
+
+<style>
+#bomber {
+  position: absolute;
+  z-index: 9;
+  cursor: move;
+}
+</style>
+
+<body>
+
+
+  <div id="flyer">
+    <div class="row_1">
+      <div class="column_1">
+        <div id="bomber">
+          <img src="./Images/air-raid-148909__340.png" width="100px" height="60px" draggable="true"></img>
+          <script src="JS/Basic_JavaScript_Drag_Event.js"></script>
+        </div>
+        <h5>Use the mouse to fly the plane!</h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="target">
+    <div class="row_2">
+      <div class="column_2">
+        <div id="explosion_button">
+          <button type="button" onclick="light(0)">Drop Bombs Here!</button>
+        </div>
+          <script>
+            function light(sw) {
+              var pic;
+              if (sw == 0) {
+                pic = "./Images/explosion-147909__340.png"
+              } else {
+                pic = "./Images/th.png"
+              }
+              document.getElementById('myImage').src = pic;
+            }
+          </script>
+            <img id="myImage" src="./Images/th.png" width="300px" height="300px"> 
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

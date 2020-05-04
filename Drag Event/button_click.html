@@ -1,0 +1,22 @@
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<p id="demo"></p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "explosion-147909__340.png"
+  } else {
+    pic = "th.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="explosion-147909__340.png" width="300px" height="300px">
+<img src="th.png"></img>
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
