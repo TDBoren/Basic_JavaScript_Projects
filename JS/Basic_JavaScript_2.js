@@ -15,4 +15,8 @@ function myFunction() {
     var y = 2;
     var z = x + y;
     document.getElementById("demo_2").innerHTML = z;
+
+    var x = 5;
+    var x += 5;
+    document.getElementById("demo_3").innerHTML = x;
 }
