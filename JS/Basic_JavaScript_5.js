@@ -4,8 +4,8 @@ document.write (typeof 7);
 function my_function() {
     document.getElementById("Test").innerHTML = 0/0;
 }
-document.getElementById("Test_2").innerHTML = isNaN('This is a string');
-document.getElementById("Test").innerHTML = isNaN("007");
+document.getElementById("Not").innerHTML = isNaN('This is a string');
+document.getElementById("Test_2").innerHTML = isNaN("007");
 document.write(2E310);
 document.write(-2E310);
 document.write(10 > 2);
