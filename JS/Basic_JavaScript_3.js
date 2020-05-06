@@ -1,14 +1,15 @@
 function Addition() {
     var Addition = 3 + 2;
-document.getElementById("Math").innerHTML = "3 + 2 = " + Addition;
+document.getElementById("Math_1").innerHTML = "3 + 2 = " + Addition;
 }
+Addition()
 function Subtraction() {
     var Subtraction = 8 - 4;
     document.getElementById("Math_2").innerHTML = "8 - 4 = " + Subtraction;
 }
 function Multiplication() {
-    var Mulitplication = 14 * 6;
-    ducument.getElementById("Math_3").innerHTML = "14 * 6 = " + Multiplication;
+    var Multiplication = 14 * 6;
+    document.getElementById("Math_3").innerHTML = "14 * 6 = " + Multiplication;
 }
 function Division() {
     var Division = 108 / 12;
