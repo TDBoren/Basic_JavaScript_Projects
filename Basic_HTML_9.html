@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lan="en">
+
+	<head>
+		<title>JavaScript 9 assignment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./CSS/Basic_CSS_9.css"> 
+    </head>
+
+    <body>
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Start Countdown</button>
+        <p id="timer"></p>
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="./Images/img_nature_wide.jpg" style="width:100%">
+              <div class="text">Nature Scene</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="./Images/img_snow_wide.jpg" style="width:100%">
+              <div class="text">Snow Scene</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="./Images/img_mountains_wide.jpg" style="width:100%">
+              <div class="text">Mountain Scene</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 /4</div>
+                <img src="./Images/img_lights_wide.jpg" style="width:100%">
+                <div class="text">Aurora Lights Scene</div>
+            </div>
+            
+            <a button class="prev" onclick="plusSlides(-1)">&#10094; Previous</button></a>
+            <a button class="next" onclick="plusSlides(1)">&#10095; Next</button></a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+            <script src="JS/Basic_JavaScript_9.js"></script>
+
+    </body>
+</html>
