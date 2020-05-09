@@ -59,11 +59,19 @@ function Time_function () {
     if (Time < 12 == Time > 0) {
         Reply = "It is morning time!";
     }
-    else if (Time > 12 == Time < 18); {
+    else if (Time > 12 == Time < 18) {
         Reply = "It is the afternoon.";
     }
     else {
         Reply = "It is evening time.";
     }
     document.getElementById("Time_of_Day").innerHTML = Reply;
+}
+function full_Sentence () {
+    var part_1 = "I have ";
+    var part_2 = "made this ";
+    var part_3 = "into a complete ";
+    var part_4 = "sentence.";
+    var whole_sentence = part_1.concat(part_2, part_3, part_4);
+    document.getElementById("Concatenate").innerHTML = whole_sentence;
 }
